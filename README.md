@@ -10,7 +10,7 @@
 2. 판 진행: GameMode(시작·종료), Lobby(술래 정하기), Catch(잡기·구출·탈출). 복제되는 GameState·PlayerState, CSV로 정하는 방 규칙.
 3. 캐릭터: 도망자 `ABamtolPlayer`(활공·헤엄·오르기·들기)와 술래 대장 `ABamtolBoss`(능력·AI·StateTree).
 4. 월드 상호작용: 우리·출구·표 자판기·버스·대포 등. 아이템·모자는 데이터 표 구동.
-5. 서버 권한 복제·RPC, 로컬라이즈, 헤드리스 자동 시험 145개.
+5. 서버 권한 복제·RPC, 로컬라이즈, AI 도구와 함께 만든 헤드리스 자동 시험(판 흐름·복제·아이템 동작 확인).
 
 ## 이 저장소의 파일 (Source/Public, Source/Private)
 | 파일 | 무엇을 보여 주나 | 읽을 포인트 |
@@ -24,7 +24,7 @@
 | BamtolCheckpoint | 모닥불 체크포인트·안개 문·지름길 문 | `ABamtolFogGate`의 상태값(`State`) 복제, `ABamtolRestFire` |
 
 ## 개발 방식
-Claude Code와 AI 페어 프로그래밍으로 구현했습니다. 설계·기획·검수·디버깅, 그리고 자동 시험 구성은 제가 직접 주도했습니다.
+Claude Code와 AI 페어 프로그래밍으로 구현했습니다. 설계·기획·검수·디버깅은 제가 주도했고, 헤드리스 자동 시험도 AI 도구와 함께 만들어 고칠 때마다 확인했습니다.
 
 ## 저작권
 All rights reserved. 채용 검토용 열람만 허용합니다.
